@@ -1,7 +1,6 @@
 import numpy as np
 from collections import deque
 import itertools
-from scipy.linalg import expm
 import sys
 import json
 

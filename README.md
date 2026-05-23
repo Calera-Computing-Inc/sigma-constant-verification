@@ -22,6 +22,8 @@ Builds a textbook Hopfield associative memory on the A₄ root lattice from scra
 python3 sim1_hopfield_a4.py
 ```
 
+**Output:** `sim1_results.json` — per-hop recall accuracy and grid-search optimum.
+
 ## Simulation 2: Spectral Laplacian Analysis
 
 **File:** `sim2_spectral_a4.py`
@@ -40,11 +42,13 @@ Builds the graph Laplacian of A₂, A₃, and A₄ lattices. Computes the heat k
 python3 sim2_spectral_a4.py
 ```
 
+**Output:** `sim2_results.json` — spectral gaps, mixing times, and extracted decay constants.
+
 ## Requirements
 
 ```
 numpy
-scipy (for sim2 only — matrix exponential)
+scipy (for sim2 only — eigendecomposition)
 ```
 
 Install:
