@@ -59,7 +59,7 @@ pip install numpy scipy
 ## Independence Guarantees
 
 - ❌ No imports from any proprietary codebase
-- ❌ No reading of Go source files or production data
+- ❌ No reading of source files or production data
 - ✅ Lattice built from the mathematical definition (ℤ^(d+1) zero-sum constraint)
 - ✅ Hebbian weights computed from scratch
 - ✅ Decay constants defined as literal floats
