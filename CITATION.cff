@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use these scripts, please cite the paper."
+title: "σ-Constant Independent Verification Scripts"
+authors:
+  - family-names: "Race"
+    given-names: "Casey Lee"
+    affiliation: "Calera Computing, Inc."
+type: software
+date-released: 2026-05-22
+license: MIT
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Race"
+      given-names: "Casey Lee"
+      affiliation: "Calera Computing, Inc."
+  title: "The σ-Constant: A Universal Algebraic Invariant for Energy Propagation in d-Dimensional Simplicial Lattices"
+  year: 2026
+  doi: "10.5281/zenodo.20350425"
