@@ -3,6 +3,7 @@ import random
 from collections import deque
 import itertools
 import sys
+import json
 
 def generate_a4_lattice(target_size=125):
     # A4 root lattice: x in Z^5, sum(x) = 0
@@ -191,6 +192,24 @@ def run_simulation():
         print("SUCCESS: Grid-search optimal alpha is in [0.80, 0.84].")
     else:
         print("FAIL: Grid-search optimal alpha is NOT in [0.80, 0.84].")
+
+    output_data = {
+        "seed": seed,
+        "best_alpha": float(best_alpha) if best_alpha is not None else None,
+        "best_acc": float(best_acc) if best_acc != -1 else None,
+        "results": {}
+    }
+    for name, a_val in alphas.items():
+        output_data["results"][name] = {"alpha": float(a_val), "hops": {}}
+        for d in range(1, 5):
+            accs = results[name][d]
+            if accs:
+                mean_acc = float(np.mean(accs))
+                se_acc = float(np.std(accs) / np.sqrt(len(accs)))
+                output_data["results"][name]["hops"][str(d)] = {"mean": mean_acc, "se": se_acc}
+                
+    with open("sim1_results.json", "w") as f:
+        json.dump(output_data, f, indent=2)
 
 if __name__ == "__main__":
     run_simulation()
