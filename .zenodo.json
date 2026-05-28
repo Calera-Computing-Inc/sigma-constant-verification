@@ -1,0 +1,23 @@
+{
+  "title": "σ-Constant Independent Verification Scripts",
+  "description": "Independent verification scripts for: The σ-Constant: A Universal Algebraic Invariant for Energy Propagation in d-Dimensional Simplicial Lattices (DOI: 10.5281/zenodo.20350425). Reproduces two key empirical results using zero shared code with the production system — pure Python + NumPy only.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Race, Casey Lee",
+      "affiliation": "Calera Computing, Inc."
+    }
+  ],
+  "license": "cc-by-sa-4.0",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.20350425",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    }
+  ],
+  "keywords": [
+    "sigma constant", "simplicial lattice", "A4 root lattice",
+    "Hopfield network", "verification", "Python"
+  ]
+}
