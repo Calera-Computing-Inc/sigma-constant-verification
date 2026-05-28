@@ -70,11 +70,12 @@ pip install numpy scipy
 
 ```bibtex
 @article{race2026sigma,
-  title={The $\sigma$-Constant: A Universal Algebraic Invariant for Energy Propagation in $d$-Dimensional Simplicial Lattices},
-  author={Race, Casey Lee},
-  year={2026},
-  doi={10.5281/zenodo.20350425},
-  publisher={Zenodo}
+  title     = {The $\sigma$-Constant: A Universal Algebraic Invariant
+               for Energy Propagation in $d$-Dimensional Simplicial Lattices},
+  author    = {Race, Casey Lee},
+  year      = {2026},
+  doi       = {10.5281/zenodo.20350425},
+  publisher = {Zenodo}
 }
 ```
 
